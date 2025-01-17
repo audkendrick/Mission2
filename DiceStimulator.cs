@@ -4,13 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+// Create class to run the actual stimulation
 public class DiceStimulator
 {
+    // random needed to generate random numbers
     private Random randomnum;
     public DiceStimulator()
     {
             randomnum = new Random();
     }
+    // Create rolldice method that will generate the numbers
     public int[] RollDice(int numrolls)
     {
         //Create array to hold count of sums of dice
@@ -29,18 +32,11 @@ public class DiceStimulator
             int totalDiceRoll = diceRoll + diceRoll2;
             rollCounts[totalDiceRoll]++;
         }
-
+        // Return the number of rolls
         return rollCounts;
 
     }
 }
-
-// CLASS 2
-// For each # possible to be rolled
-// print the number
-// Calculate the percentage of times it was rolled
-// print * for each percent it was rolled
-//( method to sub character for number)
 
 
 
