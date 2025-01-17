@@ -1,4 +1,8 @@
 ﻿using System;
+// Audra Kendrick
+// Professor Hilton
+// Create a Dice Rolling Stimulation
+
 
 // Create Initial Program class
 internal class Program
